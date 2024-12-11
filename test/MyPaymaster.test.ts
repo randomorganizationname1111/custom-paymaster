@@ -82,7 +82,7 @@ describe.only("MyPaymaster", function () {
     if (shouldEmit) {
       await expect(erc20Contract.mint(userWallet.address, 5, aaData))
         .to.emit(paymaster, "SponsoredPaymasterTransaction")
-        .withArgs(user.address, anyValue);
+        .withArgs(anyValue, user.address);
     } else {
       await (
         await erc20Contract.mint(userWallet.address, 5, aaData)
