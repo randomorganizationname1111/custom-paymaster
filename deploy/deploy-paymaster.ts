@@ -2,9 +2,10 @@ import { deployContract, getWallet, getProvider } from "./utils";
 import * as ethers from "ethers";
 
 export default async function () {
-  const erc20 = await deployContract("MyERC20", ["MyToken", "MyToken", 18]);
+  const erc20 = await deployContract("MyERC20", ["MyToken", "MyToken", 18], { noVerify: true });
   const erc20Address = await erc20.getAddress();
-  const paymaster = await deployContract("MyPaymaster", [erc20Address]);
+  console.log("erc20Address", erc20Address);
+  const paymaster = await deployContract("MyPaymaster", [erc20Address], { noVerify: true });
 
   const paymasterAddress = await paymaster.getAddress();
 
@@ -14,7 +15,7 @@ export default async function () {
   await (
     await wallet.sendTransaction({
       to: paymasterAddress,
-      value: ethers.parseEther("0.06"),
+      value: ethers.parseEther("0.001"),
     })
   ).wait();
 

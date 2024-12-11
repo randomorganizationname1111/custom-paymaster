@@ -4,10 +4,10 @@ import * as ethers from "ethers";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 
 // Put the address of the deployed paymaster here
-const PAYMASTER_ADDRESS = "0x08f62b10f5C949Af8d6d8656F86A0Cc3436FB31a";
+const PAYMASTER_ADDRESS = "0x145Ff8b31710B513725794A967B7c8f5990B98e5";
 
 // Put the address of the ERC20 token here:
-const TOKEN_ADDRESS = "0x03615ff4Af613BC55206E179dAccC5631CaA00B6";
+const TOKEN_ADDRESS = "0xd2370C25772662b39935f137Cb013D991DE83609";
 
 function getToken(hre: HardhatRuntimeEnvironment, wallet: Wallet) {
   const artifact = hre.artifacts.readArtifactSync("MyERC20");

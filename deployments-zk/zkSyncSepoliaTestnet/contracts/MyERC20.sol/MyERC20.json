@@ -331,6 +331,18 @@
       "factoryDeps": [],
       "address": "0x3Fdfff6865E01aaD3ca65DeDd5BfCD4Ed96f3da5",
       "txHash": "0xe0a295984f3c7e04f5b1c44bb40eb59592c9ba5c998fb783e676e21a3eb31d5f"
+    },
+    {
+      "constructorArgs": [
+        "MyToken",
+        "MyToken",
+        18
+      ],
+      "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "deploymentType": "create",
+      "factoryDeps": [],
+      "address": "0xd2370C25772662b39935f137Cb013D991DE83609",
+      "txHash": "0xcdd26d378ea0ca98d349efd6efa15e9dadca14a0903ea1e925169a73ccf0bb3f"
     }
   ]
 }

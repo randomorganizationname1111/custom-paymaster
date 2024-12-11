@@ -52,3 +52,8 @@ Local tests make use of the in-memory-node thanks to the `hardhat-zksync-node` p
 - [Twitter @zkSync](https://twitter.com/zksync)
 - [Twitter @zkSyncDevs](https://twitter.com/zkSyncDevs)
 - [Join our Discord Community](https://join.zksync.dev)
+
+## Deployed
+
+ERC20Token: [0xd2370C25772662b39935f137Cb013D991DE83609](https://sepolia.explorer.zksync.io/address/0xd2370C25772662b39935f137Cb013D991DE83609)
+Paymaster: [0x145Ff8b31710B513725794A967B7c8f5990B98e5](https://sepolia.explorer.zksync.io/address/0x145Ff8b31710B513725794A967B7c8f5990B98e5)
